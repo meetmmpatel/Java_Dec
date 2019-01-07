@@ -1,0 +1,15 @@
+Abstraction:
+ is the process of exposing the essential details of an entity, 
+ while ignoring the irrelevant details, 
+ to reduce the complexity for the users.
+
+Encapsulation:
+ is the process of bundling data and operations 
+ on the data together in an entity.
+
+Inheritance:
+ is used to derive a new type from an existing type, 
+ thereby establishing a parent-child relationship.
+
+Polymorphism:
+ lets an entity take on different meanings in different contexts.
