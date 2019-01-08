@@ -2,19 +2,18 @@ package com.java.method;
 
 public class VoidNonVoidMethods {
 
-    static VoidNonVoidMethods obj = new VoidNonVoidMethods();
+
 
     public static void main(String[] args) {
 
-         obj.getNum();
-        System.out.println(obj.getString());
-        System.out.println(getBoolean());
+        // To access the static void and non-void methods
+        getName();
+        getSum();
 
-        if(getBoolean()){
-            System.out.println("this is true condition");
-        }
-
-        System.out.println(obj.getNum());
+        // To access non static void and non-void methods.
+        VoidNonVoidMethods obj = new VoidNonVoidMethods();
+        obj.getNumSum();
+        obj.getInformation();
 
     }
 
@@ -24,36 +23,30 @@ public class VoidNonVoidMethods {
      *
      */
 
-    public void someValue(){
-       if (true){
 
-       }
-    }
-
-    public String getString(){
-        return "This is String";
+    // Static method with void and non- void
+    public static void getName(){
+        System.out.println("This is static void method");
     }
 
-    public int getNum(){
-        return 12 + 12;
+    //Non void method you must mentioned data types.
+    public static int getSum(){
+        System.out.println(12);
+        return 12;
     }
 
-    public void getNumSum(){
-       int num = 12;
-       int numOne = 12;
-       int sum = num + numOne;
+
+    public  void getInformation(){
+        System.out.println("This is static method");
     }
 
-    public float getFloat(){
-        return 12.99f;
-    }
-    public static boolean getBoolean(){
-        return true;
+    public int getNumSum(){
+
+        return 12;
     }
 
-    public static double getDouble(){
-        return 34.58;
-    }
+
+
 
 
 }

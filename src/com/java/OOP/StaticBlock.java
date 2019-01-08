@@ -10,6 +10,8 @@ public class StaticBlock {
 		System.out.println("static block One");
 		num = 78;
 		myStr = "Static Keyword";
+		System.out.println(num);
+		System.out.println(myStr);
 	}
 	
 	static void disp() {
@@ -22,7 +24,7 @@ public class StaticBlock {
 	
 	public static void main(String[] args) {
 		disp();
-		
+
 	}
 	
 	
